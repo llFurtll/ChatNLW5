@@ -5,3 +5,9 @@
 
 ## Descricao do projeto
 <p>Esse projeto foi desenvolvido junto a NLW5, é um chat usando o socket.io com Node.js, implementado junto algumas funcionalidades.</p>
+
+- Objetivo: Meu principal objetivo com essa semana, foi entender melhor o mundo do Node.js, entender como ele funciona para o que ele veio solucionar, quais as vantagens de utilizar ele e também aprender melhor sobre o typescript.
+
+
+## Observações
+<p>Esse projeto ainda têm alguns problemas para serem resolvidos, porém está funcional e com algumas funcionalidades novas e erros que foram corrigidos. Estou muito feliz por onde cheguei e sei que posso ir mais longe.</p>
