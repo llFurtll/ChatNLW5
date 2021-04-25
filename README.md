@@ -11,3 +11,5 @@
 
 ## Observações
 <p>Esse projeto ainda têm alguns problemas para serem resolvidos, porém está funcional e com algumas funcionalidades novas e erros que foram corrigidos. Estou muito feliz por onde cheguei e sei que posso ir mais longe.</p>
+
+<img src="https://github.com/llFurtll/ChatNLW5/blob/main/images/home.PNG">
