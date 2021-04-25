@@ -1,0 +1,79 @@
+*,
+root,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Nunito;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3c3c3;
+  -webkit-animation: background 10s cubic-bezier(1,0,0,1) infinite;
+  animation: background 10s cubic-bezier(1,0,0,1) infinite;
+}
+
+@-webkit-keyframes background {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }  
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
+
+@keyframes background {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }  
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
+
+.login {
+  background-color: white;
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.login input:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.login input[type="text"], .login input[type='password'] {
+  width: 100%;
+  height: 35px;
+  border-color: #ccc;
+  background-color: #ccc;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.login input[type="text"]:focus-visible, .login input[type='password']:focus-visible {
+  outline-color: rgb(177, 177, 177);
+  border-radius: 1px;
+}
+
+.login input[type='submit'] {
+  padding: 10px;
+  background-color: #1eb363;
+  border-color: #1b854c;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.login input[type='submit']:hover {
+  background-color: #1a8d4f;
+}

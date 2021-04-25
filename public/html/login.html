@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form>
+          <legend>Usuário</legend>
+          <input id="usuario" type="text" placeholder="Usuário">
+          <legend>Senha</legend>
+          <input id="senha" type="password" placeholder="Senha">
+          <input id="login" type="submit" value="Entrar">
+      </form>
+    </div>
+  </body>
+
+  <script>
+    if (window.sessionStorage.getItem("login")) {
+      window.location.href="http://localhost:3333/pages/admin";
+    }
+    document.getElementById("login").addEventListener("click", function(e) {
+      let user = document.getElementById("usuario");
+      let pass = document.getElementById("senha");
+      e.preventDefault();
+      if (user.value == "" || user.value == "") {
+          alert("Preencha todos os campos!");
+      } else {
+        fetch(`http://localhost:3333/settings/${user.value}`).then((result) => {
+          result.json().then((response) => {
+            if (response.password == pass.value) {
+              window.sessionStorage.setItem("login", true);
+              window.location.href="http://localhost:3333/pages/admin";
+            }
+          }).catch((err) => {
+            alert("Usuário não encontrado!");
+          });
+        });
+      }
+    });
+  </script>
+</html>

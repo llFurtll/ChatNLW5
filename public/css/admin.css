@@ -1,0 +1,168 @@
+*,
+root,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito;
+  background-color: #c3c3c3;
+}
+
+header {
+  background-color: red;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+header div {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+header span {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+#supports {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.btn_atd {
+  cursor: pointer;
+  color: #fff;
+  background: #b32a2a;
+  border: none;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_atd:hover {
+  opacity: 0.9;
+}
+
+.admin {
+  border: 1px solid #ededed;
+}
+
+.admin_send_message {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.admin_send_message input {
+  width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.admin_send_message button {
+  width: 100px;
+  cursor: pointer;
+}
+
+.admin_list_messages {
+  height: 300px;
+  overflow-y: scroll;
+  padding-top: 15px;
+}
+
+.admin_message_admin {
+  width: 300px;
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#atendimentos {
+  width: 600px;
+}
+
+.admin_message_client {
+  width: 300px;
+  background: #1eb363;
+  padding: 10px;
+  margin: 10px;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.admin_date {
+  font-size: 10px;
+  color: #fff;
+}
+
+.in_support {
+  background: #1eb363;
+  color: #fff;
+  font-size: 17px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.btn_send {
+  background: #1eb363;
+  color: #eee;
+  border: none;
+}
+
+.btn_send:hover {
+  opacity: 0.8;
+}
+
+.btn_cancel {
+  background: red;
+  color: #eee;
+  border: none;
+  margin-left: 5px;
+}
+
+.btn_cancel:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,28 @@
+{
+  "aulas": [
+    {
+      "nlw01": {
+        "codigo": "missaoespacial"
+      }
+    },
+    {
+      "nlw02": {
+        "codigo": "embuscadoproximonivel"
+      }
+    }, {
+      "nlw03": {
+        "codigo": "astronautas"
+      }
+    },
+    {
+      "nlw04": {
+        "codigo": "universoinfinito"
+      }
+    },
+    {
+      "nlw05": {
+        "codigo": "missaocumprida"
+      }
+    }
+  ]
+}
